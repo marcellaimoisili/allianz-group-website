@@ -1,197 +1,195 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {
+  ceo1,
+  ceo,
+  leader,
+  people01,
+  people02,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+  ship,
+  ship1,
+  truck,
+  helmet,
+  procure
+} from '../assets';
 
 export const navLinks = [
   {
-    id: "home",
-    title: "Home",
+    id: 'home',
+    title: 'Home',
   },
   {
-    id: "features",
-    title: "Features",
+    id: 'services',
+    title: 'Services',
   },
   {
-    id: "product",
-    title: "Product",
+    id: 'contact',
+    title: 'Contact',
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: 'about',
+    title: 'About Us',
   },
 ];
 
 export const features = [
   {
-    id: "feature-1",
-    icon: star,
-    title: "Rewards",
+    id: 'feature-1',
+    icon: procure,
+    title: 'Procurement',
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      'Procuring the right materials and equipment is crucial for the success of any project. We offer comprehensive procurement services to help you source the highest quality products at competitive prices.',
   },
   {
-    id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
+    id: 'feature-2',
+    icon: helmet,
+    title: 'Construction',
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      'Our skilled team of engineers, architects, and construction experts is dedicated to delivering exceptional results. Whether you need commercial, residential, or industrial construction services, we have the expertise to handle projects of any scale.',
   },
   {
-    id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
+    id: 'feature-3',
+    icon: ship1,
+    title: 'Shipping',
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      'We offer comprehensive shipping solutions. Our team of experienced professionals specializes in handling a wide range of cargo, from small packages to oversized freight.',
   },
 ];
 
 export const feedback = [
   {
-    id: "feedback-1",
+    id: 'feedback-1',
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: people01,
+      'We are committed to forging strong partnerships with our clients and providing tailored solutions that exceed expectations.',
+    name: 'Marcel Imoisili',
+    title: 'Founder & CEO',
+    img: ceo1,
   },
   {
-    id: "feedback-2",
+    id: 'feedback-2',
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
+      'Efficiency is at the core of our logistics operations. We strive to optimize every step of the supply chain, ensuring timely delivery.',
+    name: 'John Doe',
+    title: 'Chief Logistics Officer',
+    img: leader,
   },
   {
-    id: "feedback-3",
+    id: 'feedback-3',
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
+      'Collaboration is the key to success. We work closely with all stakeholders to ensure seamless coordination and outstanding results.',
+    name: 'Jane Doe',
+    title: 'Director of Operations',
+    img: leader,
   },
 ];
 
 export const stats = [
   {
-    id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    id: 'stats-1',
+    title: 'Items & Materials',
+    value: '450+',
   },
   {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    id: 'stats-2',
+    title: 'Supplier Locations',
+    value: '120+',
   },
   {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    id: 'stats-3',
+    title: 'Regions',
+    value: '36',
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: 'Useful Links',
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: 'Help Center',
+        link: '',
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: 'Terms & Services',
+        link: '',
       },
     ],
   },
   {
-    title: "Community",
+    title: 'Community',
     links: [
       {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        name: 'FAQs',
+        link: '',
       },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
+      // {
+      //   name: 'Partners',
+      //   link: '',
+      // },
     ],
   },
   {
-    title: "Partner",
+    title: 'Partner',
     links: [
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: 'Become a Partner',
+        link: '',
       },
       {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: 'License',
+        link: '',
       },
     ],
   },
 ];
 
 export const socialMedia = [
+  // {
+  //   id: 'social-media-1',
+  //   icon: instagram,
+  //   link: 'https://www.instagram.com/',
+  // },
   {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: "social-media-2",
+    id: 'social-media-2',
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: 'https://www.facebook.com/pages/Allianz%20%20group%20ltd/110135827799286/',
   },
+  // {
+  //   id: 'social-media-3',
+  //   icon: twitter,
+  //   link: 'https://www.twitter.com/',
+  // },
   {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
+    id: 'social-media-4',
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: 'https://ng.linkedin.com/in/marcel-imoisili-95283a4a',
   },
 ];
 
 export const clients = [
   {
-    id: "client-1",
+    id: 'client-1',
     logo: airbnb,
   },
   {
-    id: "client-2",
+    id: 'client-2',
     logo: binance,
   },
   {
-    id: "client-3",
+    id: 'client-3',
     logo: coinbase,
   },
   {
-    id: "client-4",
+    id: 'client-4',
     logo: dropbox,
   },
 ];

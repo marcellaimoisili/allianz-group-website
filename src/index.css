@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -21,12 +21,12 @@
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
+    #fae6de 0.89%,
+    #f5debe 17.23%,
+    #f0c29d 42.04%,
+    #ebb07d 55.12%,
+    #e6a75b 71.54%,
+    #ea8e26 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -34,15 +34,15 @@
   text-fill-color: transparent;
 }
 
-.bg-blue-gradient {
+.bg-orange-gradient {
   background: linear-gradient(
     157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
+    #fae6de -43.27%,
+    #f5debe -21.24%,
+    #f0c29d 12.19%,
+    #ebb07d 29.82%,
+    #e6a75b 51.94%,
+    #ea8e26 90.29%
   );
 }
 
@@ -85,6 +85,15 @@
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.construction-blur {
+  /* background-image: url('https://picsum.photos/200/300');
+  width: 200px;
+  height: 200px; */
+  /* you need to match the shadow color to your background or image border for the desired effect*/
+  /* box-shadow: 0 0 8px 8px #763921 inset; */
+  box-shadow: 0 0 8px 8px white inset;
+}
+
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);
@@ -124,17 +133,38 @@
   background: var(--black-gradient);
 }
 
-.blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+.orange__gradient {
+  background: linear-gradient(180deg, rgba(255, 201, 165, 0) 0%, #763921 100%);
   filter: blur(123px);
 }
 
 .pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  background: linear-gradient(90deg, #f4c4c4 0%, #fc6767 100%);
   filter: blur(900px);
 }
 
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+form {
+  margin: 40px auto;
+  max-width: 60vw;
+  max-height: 70vh;
+  padding: 20px 40px;
+}
+
+form input,
+textarea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px auto;
+  padding: 8px;
+  font-family: "poppins";
+  border: 1px solid white;
+  box-shadow: 0 0 8px 8px white inset;
+  border-radius: 2px;
+  background-color: #f0f0f0;
 }
