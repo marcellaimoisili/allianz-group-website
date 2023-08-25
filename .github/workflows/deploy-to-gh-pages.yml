@@ -18,13 +18,13 @@ jobs:
         run: |
           npm install
           npm run-script build
-          
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist # The folder the action should deploy.
       - name: Debug Environment Variables
         run: |
-          echo "VITE_EMAIL_SERVICE_ID: $VITE_EMAIL_SERVICE_ID"
-          echo "VITE_EMAIL_TEMPLATE_ID: $VITE_EMAIL_TEMPLATE_ID"
-          echo "VITE_EMAIL_PUBLIC_KEY: $VITE_EMAIL_PUBLIC_KEY"
+          echo "VITE_EMAIL_SERVICE_ID: ${{ env.VITE_EMAIL_SERVICE_ID }}"
+          echo "VITE_EMAIL_TEMPLATE_ID: ${{ env.VITE_EMAIL_TEMPLATE_ID }}"
+          echo "VITE_EMAIL_PUBLIC_KEY: ${{ env.VITE_EMAIL_PUBLIC_KEY }}"
