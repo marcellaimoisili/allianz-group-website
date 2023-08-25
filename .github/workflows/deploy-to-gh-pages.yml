@@ -23,3 +23,8 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist # The folder the action should deploy.
+      - name: Debug Environment Variables
+        run: |
+          echo "VITE_EMAIL_SERVICE_ID: $VITE_EMAIL_SERVICE_ID"
+          echo "VITE_EMAIL_TEMPLATE_ID: $VITE_EMAIL_TEMPLATE_ID"
+          echo "VITE_EMAIL_PUBLIC_KEY: $VITE_EMAIL_PUBLIC_KEY"

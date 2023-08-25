@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from '../style';
 import emailjs from '@emailjs/browser';
 
@@ -10,6 +10,10 @@ const Contact = () => {
     message: ''
   });
 
+  useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAIL_PUBLIC_KEY);
+  }, []);
+
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -18,12 +22,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-      emailjs.sendForm(
-        import.meta.env.VITE_EMAIL_SERVICE_ID,
-        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_EMAIL_PUBLIC_KEY
-      );
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAIL_SERVICE_ID,
+      import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+      e.target,
+      import.meta.env.VITE_EMAIL_PUBLIC_KEY
+    );
     setData({ name: '', email: '', phone: '', message: ''});
     alert('Your message has been sent!');
   };
