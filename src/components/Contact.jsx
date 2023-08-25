@@ -11,7 +11,10 @@ const Contact = () => {
   });
 
   useEffect(() => {
-    emailjs.init(import.meta.env.VITE_EMAIL_PUBLIC_KEY);
+    // Check if running in a browser environment (Vite)
+    if (import.meta.env.VITE_EMAIL_PUBLIC_KEY) {
+      emailjs.init(import.meta.env.VITE_EMAIL_PUBLIC_KEY);
+    }
   }, []);
 
   const handleChange = (e) => {
@@ -23,10 +26,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(
-      import.meta.env.VITE_EMAIL_SERVICE_ID,
-      import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+      import.meta.env.VITE_EMAIL_SERVICE_ID ||
+        process.env.VITE_EMAIL_SERVICE_ID,
+      import.meta.env.VITE_EMAIL_TEMPLATE_ID ||
+        process.env.VITE_EMAIL_TEMPLATE_ID,
       e.target,
-      import.meta.env.VITE_EMAIL_PUBLIC_KEY
+      import.meta.env.VITE_EMAIL_PUBLIC_KEY || process.env.VITE_EMAIL_PUBLIC_KEY
     );
     setData({ name: '', email: '', phone: '', message: ''});
     alert('Your message has been sent!');
