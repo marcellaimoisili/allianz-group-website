@@ -25,6 +25,6 @@ jobs:
           folder: dist # The folder the action should deploy.
       - name: Debug Environment Variables
         run: |
-          echo "VITE_EMAIL_SERVICE_ID: ${{ env.VITE_EMAIL_SERVICE_ID }}"
-          echo "VITE_EMAIL_TEMPLATE_ID: ${{ env.VITE_EMAIL_TEMPLATE_ID }}"
-          echo "VITE_EMAIL_PUBLIC_KEY: ${{ env.VITE_EMAIL_PUBLIC_KEY }}"
+          echo "VITE_EMAIL_SERVICE_ID: $env.VITE_EMAIL_SERVICE_ID"
+          echo "VITE_EMAIL_TEMPLATE_ID: $env.VITE_EMAIL_TEMPLATE_ID"
+          echo "VITE_EMAIL_PUBLIC_KEY: $env.VITE_EMAIL_PUBLIC_KEY"
